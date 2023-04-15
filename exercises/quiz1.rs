@@ -10,17 +10,9 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-
 // Put your function here!
-fn calculate_price_of_apples(nums:u32) ->u32{
-    
-    if nums <= 40 {
-        nums*2
-    }else{
-        nums
-    }
+// fn calculate_price_of_apples {
 
-}
 // Don't modify this function!
 #[test]
 fn verify_test() {
@@ -33,4 +25,12 @@ fn verify_test() {
     assert_eq!(80, price2);
     assert_eq!(41, price3);
     assert_eq!(65, price4);
+}
+
+fn calculate_price_of_apples(input: i32) -> i32 {
+    if input <= 40 {
+        input * 2
+    } else {
+        input
+    }
 }

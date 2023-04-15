@@ -3,7 +3,6 @@
 // adding, changing or removing any of them.
 // Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand for a hint.
 
-// 这道题不能通过改变量名的方式来做，但是可以利用借用的作用域来看
 fn main() {
     let mut x = 100;
     let y = &mut x;

@@ -2,10 +2,9 @@
 // Make me compile without changing line 13 or moving line 10!
 // Execute `rustlings hint move_semantics2` or use the `hint` watch subcommand for a hint.
 
-
 fn main() {
     let vec0 = Vec::new();
-    // 依然是编译器的好，直接提示我应该这么做
+
     let mut vec1 = fill_vec(vec0.clone());
 
     // Do not change the following line!

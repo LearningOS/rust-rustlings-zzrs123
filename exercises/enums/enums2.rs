@@ -1,19 +1,18 @@
 // enums2.rs
 // Execute `rustlings hint enums2` or use the `hint` watch subcommand for a hint.
 
-
 #[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
-    Quit,
+    Move { x: i32, y: i32 },
     Echo(String),
-    Move{x:i32,y:i32},
     ChangeColor(i32, i32, i32),
+    Quit,
 }
 
 impl Message {
     fn call(&self) {
-        println!("{:?}", self);
+        println!("{:?}", &self);
     }
 }
 

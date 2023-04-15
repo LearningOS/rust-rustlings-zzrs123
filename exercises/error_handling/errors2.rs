@@ -2,7 +2,7 @@
 // Say we're writing a game where you can buy items with tokens. All items cost
 // 5 tokens, and whenever you purchase items there is a processing fee of 1
 // token. A player of the game will type in how many items they want to buy,
-// and the `total_cost` function will calculate the total cost of the tokens.
+// and the `total_cost` function will calculate the total number of tokens.
 // Since the player typed in the quantity, though, we get it as a string-- and
 // they might have typed anything, not just numbers!
 
@@ -16,8 +16,6 @@
 // There are at least two ways to implement this that are both correct-- but
 // one is a lot shorter!
 // Execute `rustlings hint errors2` or use the `hint` watch subcommand for a hint.
-
-
 
 use std::num::ParseIntError;
 
